@@ -1,3 +1,5 @@
+package Pengumpulan;
+
 import java.util.Scanner ;
 import java.time.LocalDate;
 import java.time.Period ;
@@ -20,7 +22,7 @@ public class Codelab1modul1 {
         LocalDate Sekarang = LocalDate.now();
         Period Umur = Period.between(TanggalLahir, Sekarang);
 
-        System.out.println("\nNama :" +Nama);
+        System.out.println(STR."\nNama : \{Nama}");
         System.out.println("Jenis Kelamin :" + (Jeniskelamin == 'L' ? "Laki-laki" : "perempuan"));
         System.out.println("Umur :" + Umur.getYears() + " Tahun " + Umur.getMonths() + " Bulan " + Umur.getDays() + " hari ");
 
